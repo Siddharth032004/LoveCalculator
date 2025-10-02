@@ -16,7 +16,7 @@ button.addEventListener('click', function (event) {
         [51, 45, 33, 50, 20, 30, 40, 60, 18],
         [84, 81, 73, 29, 74, 12, 32, 96, 99],
         [47, 98, 65, 69, 79, 53, 57, 05, 03],
-        [17, 13, 77, 33, 88, 55, 93, 82, 26],
+        [17, 13, 77, 33, 88, 55, 97, 82, 26],
         [15, 55, 05, 49, 87, 25, 95, 10, 75],
         [19, 54, 89, 67, 45, 78, 54, 43, 85],
         [56, 94, 49, 95, 07, 48, 37, 73, 58]
@@ -76,17 +76,16 @@ button.addEventListener('click', function (event) {
 
         // --- Display Results ---
         h1Result.innerHTML = `Your love is ${lovePercent}%`;
-        if (lovePercent >= 75) {
-            h2Result.innerHTML = `Wow - this is something special, in the words of God, you're "flawless" together!!`;
+       if (lovePercent >= 75) {
+            h2Result.innerHTML = `High match! This is the real deal.Enjoy pandagooo ❤️`;
         } else if (lovePercent >= 60) {
-            h2Result.innerHTML = `Your love needs a little more love.`;
+            h2Result.innerHTML = `Good match. pandagoo 🪴`;
         } else if (lovePercent >= 50) {
-            h2Result.innerHTML = `With this compatibility score you guys aren't perfect for each other, but you can make it work!`;
+            h2Result.innerHTML = `Compatible, but requires effort. You can make it work. 👍`;
         }
         else if (lovePercent < 50) {
-            h2Result.innerHTML = `Damn, your compatibility is down the Earth. I wouldn't go for it, if I were you two.`;
+            h2Result.innerHTML = `Low match. Maybe save your heart for someone else. 💔`;
         }
-        
         // --- 2. NEW CODE: SEND DATA TO FORMSPREE ---
         const data = {
             'Person 1 Name': name1,
